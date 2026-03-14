@@ -44,3 +44,52 @@ Never call AI or Stripe from Angular.
 Never put scheduling or notification dispatch in Angular or Edge Functions.
 
 ## Project Structure
+src/
+
+app/
+
+core/           # Auth service, guards, interceptors, Supabase client, models
+
+shared/         # Shared components, pipes, directives
+
+features/       # Lazy-loaded feature modules
+
+auth/         # Login, signup, onboarding quiz
+
+dashboard/    # Home dashboard
+
+trips/        # Trip creation, itinerary
+
+group/        # Group chat, location sharing
+
+discovery/    # Nightlife discovery
+
+flights/      # Flight & travel tracking
+
+expenses/     # Expense tracking
+
+wellness/     # Wellness nudges, checklists
+
+media/        # Gallery, testimonials
+
+ai-assistant/ # AI trip chat & knowledge base
+
+subscription/ # Premium tier
+
+profile/      # User profile & settings
+
+app.routes.ts
+
+app.config.ts
+
+environments/
+
+supabase/
+
+functions/        # Edge Functions
+
+migrations/       # SQL with RLS
+
+n8n/
+
+workflows/        # Exported n8n workflow JSON (version controlled)
